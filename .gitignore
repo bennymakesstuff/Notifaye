@@ -7,6 +7,8 @@ public/*
 # local env files
 .env.local
 .env.*.local
+.env
+webpack.config.*.js
 
 # Log files
 npm-debug.log*

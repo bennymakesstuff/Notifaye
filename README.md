@@ -65,9 +65,25 @@ modules: {
 
 
 ### Usage
+By default, Notifaye instantiates with a "default" notification queue. More can be added via the newQueue() method.
+All functions assume the default queue if no queue is explicitly passed into the methods as a parameter.
 
+| Method | Description | Parameters | Output |
+| ------ | ----------- | ---------- | ------ |
+| Vue.$notifaye.add() | Adds a new notification to a queue. | - | - |
+| Vue.$notifaye.newQueue() | Adds a new queue to carry notifications. | - | - |
+| Vue.$notifaye.count() | Returns the number of notifications in a queue. | - | - |
+| Vue.$notifaye.listQueues() | Returns all queues. | - | - |
+| Vue.$notifaye.notes() | Returns all the notifications in a queue.  | - | - |
+| Vue.$notifaye.dessimate() | Removes all notifications from a queue.  | - | - |
+| Vue.$notifaye.removeNewest() | Removes the youngest / newest notification from the queue array. i.e. Index 0.  | - | - |
+| Vue.$notifaye.removeOldest() | Removes the oldest notification from a queue (array). i.e. Index -1  | - | - |
+| Vue.$notifaye.startTimer() | Starts the timeout until a notification disappears.  | - | - |
+| Vue.$notifaye.removeNotification() | Removes a specific notification at a given index in a queue.  | - | - |
 
 ### Configuration
-
+Congiguration options are yet to be implemented.
+They are currently being worked on.
 
 ### Licence
+MIT

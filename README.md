@@ -38,9 +38,10 @@ It is important to pass in the instance of your Vuex store next to notifaye in V
 
 import { notifaye } from 'Notifaye'
 
-Vue.use(notifaye, store)
+Vue.use(notifaye, store, options)
 
 ```
+The third parameter here is the options object for configuration of the Notifaye instance.
 
 #### Step 3
 Finally add the plugin as a Vuex module. This allows Vuex to include our store as a namespaced substore (module) and gives it the ability to be accessed via Vuex normal store methods.

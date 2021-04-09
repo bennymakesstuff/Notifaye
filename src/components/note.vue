@@ -37,8 +37,8 @@ export default {
   },
   methods: {
     startTimer: function(){
-      //Possibly move the static logic into the index file on the $notifaye object so that even if the function is called the object manages it.
-      this.$notifaye.startTimer(this.queue, this.data.noteid);
+      //Possibly move the static logic into the index file on the $notify object so that even if the function is called the object manages it.
+      this.$notify.startTimer(this.queue, this.data.noteid);
 
     },
     pauseTimer: function(){
@@ -49,7 +49,7 @@ export default {
     },
     removeEarly: function(){
       console.log('Remove Early');
-      this.$notifaye.removeNotification(this.queue, this.data.noteid);
+      this.$notify.removeNotification(this.queue, this.data.noteid);
     }
   }
 }

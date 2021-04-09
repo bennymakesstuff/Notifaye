@@ -9,7 +9,7 @@
 import Note from './note.vue';
 
 export default {
-  name: 'notifayeToast',
+  name: 'notifyToast',
   components: {
     Note
   },

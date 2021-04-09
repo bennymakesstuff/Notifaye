@@ -1,6 +1,6 @@
 {
-  "name": "notifaye",
-  "version": "1.0.2",
+  "name": "vue-notify",
+  "version": "1.0.4",
   "description": "A system for managing static and dynamic notifications in Vue/Vuex",
   "main": "index.js",
   "scripts": {
